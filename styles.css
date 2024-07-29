@@ -1,0 +1,317 @@
+﻿/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: background 0.8s;
+}
+
+
+
+.background-image {
+    background-image: url('IMG_5469.JPG'); /* 设置背景图像 */
+    background-size: cover; /* 背景图覆盖整个元素 */
+    background-repeat: no-repeat; /* 背景图不重复 */
+    background-position: center center; /* 背景图居中显示 */
+    min-height: 100%; /* 确保元素至少覆盖整个视口高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* 内边距 */
+    opacity: 0.9;
+}
+
+
+.day {
+    text-align: right;
+    animation: bounce 2s infinite, text-color-change 5s infinite;
+}
+body {
+    background-image: url(1.png);
+    
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 45px;
+    background-attachment: fixed;
+    background-color: antiquewhite; /* 背景颜色 */
+    color: #333; /* 文字颜色 */
+    line-height: 1.6; /* 行高 */
+}
+.nav {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.container {
+    background-image: url('6.jpg');
+    background-size: cover;
+    max-width: 1200px; /* 最大宽度 */
+    margin: 0 auto; /* 上下0，左右自动（居中） */
+    padding: 20px; /* 内边距 */
+    color: #ffffff;
+    background-repeat: no-repeat; /* 背景图不重复 */
+    text-shadow: 11px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    font-family: 'Helvetica Neue', 'Hiragino Sans', 'Yu Gothic', Arial, sans-serif; /* 优先使用苹果和日系字体 */
+    font-size: 2.5rem; /* 字体大小 */
+    margin-bottom: 20px; /* 外边距 */
+    font-weight: 300; /* 轻量级字体 */
+    text-align: center; /* 文本居中 */
+    -webkit-animation: shine 2s infinite;
+}
+
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem; /* 增加段落间距 */
+}
+
+
+.zhiti {
+    font-family: STXingkai;
+    color: #e1dbd2;
+    line-height: 1;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+
+.biaoti{
+
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: lightcoral;
+    outline: 0;
+    
+    
+    
+}
+
+
+    a:hover {
+        text-decoration: underline; /* 鼠标悬浮时添加下划线 */
+        color: whitesmoke; /* 鼠标悬浮时的颜色 */
+    }
+
+img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 20px 0; /* 图片外边距 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 添加一些额外的样式 */
+.section {
+    padding: 50px 0; /* 各节之间的间距 */
+    background-color: #fff; /* 节的背景色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微的阴影 */
+    margin-bottom: 20px; /* 节与节之间的间距 */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px; /* 标题与内容之间的间距 */
+}
+
+
+.blog-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.blog-main2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+    .post {
+        width: calc(33% - 40px);
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+.post
+    .post h2 {
+        margin-bottom: 10px;
+    }
+
+    .post p {
+        margin-bottom: 10px;
+    }
+
+    .post a {
+        display: inline-block;
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .post a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+.blog-main .post:nth-of-type(1) {
+    background-image: url('2.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+
+.blog-main .post:nth-of-type(2) {
+    background-image: url('3.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+.blog-main .post:nth-of-type(3) {
+    background-image: url('4.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+.blog-main .post {
+    position: relative; /* 确保子元素绝对定位 */
+    cursor: pointer; /* 鼠标悬停在元素上时显示指针手势 */
+}
+
+.blog-main2 .post:nth-of-type(1) {
+    background-image: url('5.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+.blog-main2 .post:nth-of-type(2) {
+    background-image: url('9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+.blog-main2 .post:nth-of-type(3) {
+    background-image: url('11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+    .post {
+        transition: transform 0.5s ease; /* 平滑过渡效果 */
+    }
+
+.post:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@-webkit-keyframes shine {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #FFC0CB, 0 0 10px #FFC0CB; /* 修改为粉色阴影 */
+    }
+
+    50% {
+        text-shadow: 0 0 10px #FFC0CB, 0 0 40px #FFC0CB; /* 修改为粉色阴影 */
+    }
+}
+/* 创建发光动画 */
+@-webkit-keyframes bounce {
+    0%,100%,20%,50%,80% {
+        -webkit-transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+/* 创建文字上下动画 */
+@keyframes text-color-change {
+    0% {
+        color: #FFC0CB; /* 浅粉色 - 动画开始时的颜色 */
+    }
+
+    25% {
+        color: #FF69B4; /* 深粉色 - 动画的四分之一 */
+    }
+
+    50% {
+        color: #FF1493; /* 鲜艳的粉色 - 动画的一半 */
+    }
+
+    75% {
+        color: #DB7093; /* 浅紫色 - 接近结束的颜色 */
+    }
+
+    100% {
+        color: #FFC0CB; /* 返回浅粉色 - 动画结束时的颜色 */
+    }
+}
